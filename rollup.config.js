@@ -3,14 +3,10 @@ import buildOptimizer from '@angular-devkit/build-optimizer';
 import uglify from 'rollup-plugin-uglify';
 
 const uglifyOptions = {
-  warnings: false,
-  output: {
-    ascii_only: true,
-    comments: false,
-    webkit: true,
-  },
-  mangle: false,
+  mangle: true,
   compress: {
+    pure_getters: true,
+    passes: 3,
     global_defs: {
       ngDevMode: false,
     }
@@ -25,14 +21,11 @@ export default {
     name: 'app'
   },
   plugins: [
-    resolve(),
-    optimizer({
-			sideEffectFreeModules: ['']
-		}),
+    resolve({jsnext: true, module: true}),
+    optimizer(),
     uglify.uglify(uglifyOptions)
   ]
 }
-
 
 function optimizer(options) {
 	return {
