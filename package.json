@@ -1,0 +1,27 @@
+{
+  "name": "angular-ivy-hello-world",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "ngc -p tsconfig.json",
+    "bundle": "rollup -c rollup.config.js",
+    "start": "http-server public"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "rollup": "^0.67.3",
+    "rollup-plugin-node-resolve": "^3.4.0",
+    "typescript": "^3.1.6"
+  },
+  "dependencies": {
+    "@angular-devkit/build-optimizer": "^0.10.6",
+    "@angular/common": "^7.1.0",
+    "@angular/compiler": "^7.1.0",
+    "@angular/compiler-cli": "^7.1.0",
+    "@angular/core": "^7.1.0",
+    "rollup-plugin-uglify": "^6.0.0",
+    "rxjs": "^6.3.3"
+  }
+}
