@@ -1,6 +1,7 @@
 import resolve from 'rollup-plugin-node-resolve';
 import buildOptimizer from '@angular-devkit/build-optimizer';
 import uglify from 'rollup-plugin-uglify';
+import filesize from 'rollup-plugin-filesize';
 
 const uglifyOptions = {
   mangle: true,
@@ -23,7 +24,8 @@ export default {
   plugins: [
     resolve({jsnext: true, module: true}),
     optimizer(),
-    uglify.uglify(uglifyOptions)
+    uglify.uglify(uglifyOptions),
+    filesize()
   ]
 }
 

@@ -4,14 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "ngc -p tsconfig.json",
-    "bundle": "rollup -c rollup.config.js",
+    "build": "ngc -p tsconfig.json && rollup -c rollup.config.js",
     "start": "http-server public"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "rollup": "1.0.2",
+    "rollup-plugin-filesize": "6.0.0",
     "rollup-plugin-node-resolve": "4.0.0",
     "typescript": "3.2.2"
   },
