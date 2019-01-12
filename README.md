@@ -5,6 +5,7 @@ Hello World example code for Angular ivy
 * Clone repository
   ```
   git clone https://github.com/aelbore/angular-ivy-hello-world.git
+  git checkout ivy-code-size
   ```
 * Install dependencies
   ```
@@ -13,7 +14,7 @@ Hello World example code for Angular ivy
   ```
 * Build and Bundle
   ```
-  npm run build && npm run bundle
+  npm run build
   ```
 * Start the Application
   ```
