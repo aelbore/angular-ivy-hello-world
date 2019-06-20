@@ -1,1 +1,2 @@
-import './card'
+import './card/card'
+import './input/input'

@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation, Input } from '@angular/core'
-import wrap from './wrapper';
+import wrap from '../wrapper';
 
 export class Profile {
   name?: string;
