@@ -21,7 +21,7 @@ const uglifyOptions = {
 }
 
 export default {
-  input: 'dist/app.js',
+  input: 'dist/src/app.js',
   treeshake: true,
   output: {
     file: 'public/app.js',

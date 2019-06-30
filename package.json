@@ -10,18 +10,18 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "rollup": "1.10.0",
-    "rollup-plugin-filesize": "6.0.1",
-    "rollup-plugin-node-resolve": "4.2.3",
-    "rollup-plugin-terser": "4.0.4",
-    "typescript": "3.4.3"
+    "rxjs": "6.5.2",
+    "rollup": "1.16.3",
+    "rollup-plugin-filesize": "6.1.1",
+    "rollup-plugin-node-resolve": "5.2.0",
+    "rollup-plugin-terser": "5.0.0",
+    "typescript": "3.5.2"
   },
   "dependencies": {
-    "@angular-devkit/build-optimizer": "0.13.8",
-    "@angular/common": "8.0.0-beta.12",
-    "@angular/compiler": "8.0.0-beta.12",
-    "@angular/compiler-cli": "8.0.0-beta.12",
-    "@angular/core": "8.0.0-beta.12",
-    "rxjs": "6.4.0"
+    "@angular-devkit/build-optimizer": "0.800.6",
+    "@angular/common": "8.0.3",
+    "@angular/compiler": "8.0.3",
+    "@angular/compiler-cli": "8.0.3",
+    "@angular/core": "8.0.3"
   }
 }
