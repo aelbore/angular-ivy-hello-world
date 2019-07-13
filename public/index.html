@@ -6,7 +6,14 @@
 	<title>Hello World</title>
 </head>
 <body>
-	<hello-world></hello-world>
-  <script src="app.js"></script>
+	<script src="https://unpkg.com/@webcomponents/custom-elements@1.2.4/src/native-shim.js"></script>
+	<hello-name></hello-name>
+	<script src="app.js"></script>
+	<script>
+		const element = document.querySelector('hello-name')
+		element.addEventListener('increment', event => {
+			element.count = event.detail + 1
+		})
+	</script>
 </body>
 </html>

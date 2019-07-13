@@ -26,6 +26,7 @@ export default {
   output: {
     file: 'public/app.js',
     format: 'iife',
+    name: 'app',
     sourcemap: true
   },
   plugins: [

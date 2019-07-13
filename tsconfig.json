@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es2015",
     "module": "es2015",
     "lib": [
       "dom", "es2015"
@@ -12,6 +12,6 @@
     "emitDecoratorMetadata": true
   },
   "angularCompilerOptions": {
-    "enableIvy": "ngtsc"
+    "enableIvy": true
   }
 }
