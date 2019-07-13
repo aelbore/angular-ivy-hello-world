@@ -5,7 +5,7 @@
     "lib": [
       "dom", "es2015"
     ],
-    "outDir": "dist",
+    "outDir": ".tmp",
     "moduleResolution": "node",
     "esModuleInterop": true,
     "experimentalDecorators": true,
@@ -13,5 +13,8 @@
   },
   "angularCompilerOptions": {
     "enableIvy": true
-  }
+  },
+  "exclude": [
+    "tools/**/*"
+  ]
 }

@@ -21,10 +21,10 @@ const uglifyOptions = {
 }
 
 export default {
-  input: 'dist/src/app.js',
+  input: '.tmp/src/index.js',
   treeshake: true,
   output: {
-    file: 'public/app.js',
+    file: 'dist/card.js',
     format: 'iife',
     name: 'app',
     sourcemap: true

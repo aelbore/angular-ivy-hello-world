@@ -1,16 +1,15 @@
 # angular-ivy-hello-world
-Hello World example code for Angular ivy
+Card Element example code for Angular ivy
 
 ## Getting Started
 * Clone repository
   ```
   git clone https://github.com/aelbore/angular-ivy-hello-world.git
-  git checkout ivy-code-size
+  git checkout card
   ```
 * Install dependencies
   ```
   npm install
-  npm install -g http-server
   ```
 * Build and Bundle
   ```
@@ -19,5 +18,5 @@ Hello World example code for Angular ivy
 * Start the Application
   ```
   npm start
-  browse: http://localhost:8080
+  browse: http://localhost:3000
   ```

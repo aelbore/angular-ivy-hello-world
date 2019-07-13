@@ -3,16 +3,60 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Hello World</title>
+	<title>Card Element</title>
+	<style>
+		.cards {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-auto-rows: auto;
+			grid-gap: 1rem; 
+
+			font-family: "Avenir", Helvetica, Arial, sans-serif;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			text-align: center;
+			color: #2c3e50;
+		}
+	</style>
 </head>
 <body>
-	<script src="https://unpkg.com/@webcomponents/custom-elements@1.2.4/src/native-shim.js"></script>
-	<hello-name></hello-name>
-	<script src="app.js"></script>
+	<div id="app" class="cards"></div>
+	<script src="card.js"></script>
 	<script>
-		const element = document.querySelector('hello-name')
-		element.addEventListener('increment', event => {
-			element.count = event.detail + 1
+		const profiles = [
+			{
+				name: "Jane Doe",
+				profession: "Framework Developer",
+				motto: "I never wanted to be famous, I wanted to be great.",
+				photo: "https://pymwoqn637.codesandbox.io/default.png"
+			},
+			{
+				name: "Kurtis Weissnat",
+				profession: "Developer",
+				motto: "When in doubt, iterate faster!",
+				photo: "https://pymwoqn637.codesandbox.io/default.png"
+			},
+			{
+				name: "Chelsey Dietrich",
+				profession: "UX Developer",
+				motto: "Genius is the ability to reduce the complicated to the simple.",
+				photo: "https://pymwoqn637.codesandbox.io/default.png"
+			},
+			{
+				name: "Leanne Graham",
+				profession: "UI Developer",
+				motto: "The key to performance is elegance, not battalions of special cases.",
+				photo: "https://pymwoqn637.codesandbox.io/default.png"
+			}
+		]
+
+		const root = document.getElementById('app')
+
+		profiles.forEach(profile => {
+			const card = document.createElement('ar-card')
+			root.appendChild(card)
+
+			card.profile = { ...profile }
 		})
 	</script>
 </body>
