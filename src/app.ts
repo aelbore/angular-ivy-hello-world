@@ -3,17 +3,8 @@ import wrap from './wrapper'
 
 @Component({
   selector: "hello-name",
-  template: `
-    <h1>Hello {{ name }}</h1>
-    <h2>Count {{ count }}</h2>
-    
-    <button (click)="onIncrement($event)">Increment</button>
-  `,
-  styles: [`
-    h1 { 
-      color: var(--h1-color, red) 
-    }
-  `],
+  templateUrl: './app.html',
+  styles: [ './app.css'  ],
   encapsulation: ViewEncapsulation.ShadowDom
 })
 export class HelloNameComponent {
