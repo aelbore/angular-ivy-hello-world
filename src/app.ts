@@ -18,6 +18,10 @@ export class HelloNameComponent {
     this.increment.emit(this.count)
   }
 
+  updateName(newName: string) {
+    this.name = newName
+  }
+
 }
 
 customElements.define('hello-name', wrap(HelloNameComponent))
